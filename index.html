@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bernabe</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.js"></script>
+
+    <link rel="stylesheet" href="src/output.css">
+    <style>
+        /* section {
+            will-change: transform, opacity;
+        } */
+    </style>
+</head>
+
+<body class="min-h-screen flex flex-col">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+            <!-- Logo / Name -->
+            <a href="#" class="text-xl font-bold text-black">Janielle Bernabe</a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex  space-x-6 text-sm font-medium text-gray-600">
+                <a href="#about" class="hover:text-gray-300 transition-all duration-300">About</a>
+                <a href="#skills" class="hover:text-gray-300 transition-all duration-300">Skills</a>
+                <a href="#projects" class="hover:text-gray-300 transition-all duration-300">Projects</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class=" text-gray-600 md:hidden inline-block cursor-pointer focus:outline-none">
+                <i data-lucide="menu" class="lucide lucide-menu w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="flex  md:hidden px-6 pb-4">
+            <nav class="flex flex-col space-y-2 text-sm font-medium text-gray-600">
+                <a href="#about" class="hover:text-gray-300 transition-all duration-300">About</a>
+                <a href="#skills" class="hover:text-gray-300 transition-all duration-300">Skills</a>
+                <a href="#projects" class="hover:text-gray-300 transition-all duration-300">Projects</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="main-section" class="h-[80vh] flex">
+            <div class="m-auto space-y-3">
+                <h1 class=" text-5xl lg:text-8xl text-center font-bold font-Roboto">Janielle Anna B. Bernabe</h1>
+                <p class="text-center text-xl lg:text-3xl font-semibold text-gray-600">Eager to Learn and Grow Through
+                    Meaningful
+                    Experience</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 bg-white">
+            <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
+                <div class="animate-in">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">About Me</h2>
+                    <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                        Hi! I'm <strong>Janielle Anna B. Bernabe</strong>, a passionate and detail-oriented IT Student
+                        with
+                        basic experience in building practical business tools like desktop applications,, and
+                        ERP simulations.
+                    </p>
+                    <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                        Currently building a foundation in technical skills and gaining exposure to how technology
+                        supports business processes. Has basic experience working with tools like <span
+                            class="font-bold">C#</span>, <span class="font-bold">SQL</span>, and <span
+                            class="font-bold">SAP S/4HANA</span>, and is steadily learning how to create simple,
+                        practical solutions from real-world examples.
+                    </p>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        Enjoys strategic and collaborative gaming, which supports a growing interest in problem-solving,
+                        critical thinking, and teamwork — qualities that also apply to learning and working on
+                        technology-focused projects.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-16 bg-gray-50">
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center ">Skills & Tools</h2>
+
+                <div class="grid items-center justify-center md:grid-cols-2 gap-10 text-sm text-gray-700">
+
+                    <!-- Programming & Development -->
+                    <div class="animate-in">
+                        <h3 class="text-xl font-bold mb-2">Programming & Development</h3>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>Basic knowledge of C# (Windows Forms)</li>
+                            <li>Introduction to Object-Oriented Programming concepts</li>
+                            <li>Experience with simple desktop application development</li>
+                        </ul>
+                    </div>
+
+                    <!-- Database & Data Handling -->
+                    <div class="animate-in">
+                        <h3 class="text-xl font-bold mb-2">Database & Data Handling</h3>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>Familiarity with SQL Server Management Studio (SSMS)</li>
+                            <li>Basic understanding of SQL queries and data handling</li>
+                        </ul>
+                    </div>
+
+                    <!-- Enterprise Systems -->
+                    <div class="animate-in">
+                        <h3 class="text-xl font-bold mb-2">Enterprise Systems</h3>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>Exposure to SAP S/4HANA through procurement simulations</li>
+                            <li>Basic knowledge of vendor and purchase order management</li>
+                            <li>Introductory understanding of ERP workflows</li>
+                        </ul>
+                    </div>
+
+                    <!-- Soft Skills & Personal Traits -->
+                    <div class="animate-in">
+                        <h3 class="text-xl font-bold mb-2">Soft Skills & Personal Traits</h3>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>Eager to learn new technologies and tools</li>
+                            <li>Detail-oriented with an analytical mindset</li>
+                            <li>Comfortable working with structured processes and documentation</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+                <!-- Hobbies -->
+                <div class="mt-10 text-center">
+                    <h3 class="text-xl font-bold mb-2 text-gray-700">Hobbies</h3>
+                    <p class="text-gray-600">Gaming – enjoys strategy, problem-solving, and collaborative play</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-12 bg-gray-100">
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Sample Projects</h2>
+                <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+                    <!-- Project Card -->
+                    <div class="bg-white flex flex-col rounded-2xl shadow-md p-6 transition hover:shadow-lg animate-in">
+                        <div class="flex items-center gap-2 mb-3 ">
+                            <i class="lucide lucide-package text-xl"></i>
+                            <h3 class="text-xl font-bold text-gray-600">Inventory Management System</h3>
+                        </div>
+                        <p class="text-gray-700 grow text-sm mb-4">
+                            Developed a Windows Forms desktop application in C# for inventory management. Features
+                            include
+                            item entry, stock tracking, and reporting. SQL Server ensures reliable and scalable data
+                            handling.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs mb-4">
+                            <span class="bg-gray-300 font-bold px-2 py-1 rounded-full">C#</span>
+                            <span class="bg-gray-300 font-bold px-2 py-1 rounded-full">Windows Forms</span>
+                            <span class="bg-gray-300 font-bold px-2 py-1 rounded-full">SQL Server</span>
+                        </div>
+
+                    </div>
+
+                    <!-- Project Card -->
+                    <div class="bg-white flex flex-col rounded-2xl shadow-md p-6 transition hover:shadow-lg animate-in">
+                        <div class="flex items-center gap-2 mb-3 ">
+                            <i class="lucide lucide-bar-chart-3 text-xl"></i>
+                            <h3 class="text-xl font-bold text-gray-600">Sales Data Analytics Dashboard</h3>
+                        </div>
+                        <p class="text-gray-700 grow    text-sm mb-4">
+                            Built an interactive dashboard using Excel and SQL Server. Applied advanced formulas and
+                            dynamic
+                            visualizations to support business insights and real-time data exploration.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs mb-4">
+                            <span class="bg-gray-300 font-bold px-2 py-1 rounded-full">Excel</span>
+                            <span class="bg-gray-300 font-bold px-2 py-1 rounded-full">SQL</span>
+                            <span class="bg-gray-300 font-bold px-2 py-1 rounded-full">Data Analysis</span>
+                        </div>
+
+                    </div>
+
+                    <!-- Project Card -->
+                    <div class="bg-white flex flex-col rounded-2xl shadow-md p-6 transition hover:shadow-lg animate-in">
+                        <div class="flex items-center gap-2 mb-3 ">
+                            <i class="lucide lucide-building-2 text-xl"></i>
+                            <h3 class="text-xl font-bold text-gray-600">SAP S/4HANA Procurement Simulation</h3>
+                        </div>
+                        <p class="text-gray-700 grow text-sm mb-4">
+                            Participated in a simulated procurement cycle using SAP S/4HANA. Created purchase orders,
+                            managed vendor master data, and generated reports—demonstrating hands-on ERP system
+                            experience.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs mb-4">
+                            <span class="bg-gray-300 font-bold px-2 py-1 rounded-full">SAP</span>
+                            <span class="bg-gray-300 font-bold px-2 py-1 rounded-full">Procurement</span>
+                            <span class="bg-gray-300 font-bold px-2 py-1 rounded-full">ERP</span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-white  text-center text-sm text-gray-500 ">
+        &copy; 2025 Janielle Anna B. Bernabe
+    </footer>
+    <script defer type="module">
+        window.addEventListener("DOMContentLoaded", () => lucide.createIcons());
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        import { animate, inView } from "https://cdn.jsdelivr.net/npm/motion@12.15.0/+esm"
+        inView(".animate-in", (element) => {
+            animate(
+                element,
+                { opacity: 1, y: [100, 0] },
+                {
+                    duration: 0.5,
+                    easing: [0.17, 0.55, 0.55, 1],
+                }
+            )
+
+            return () => animate(element, { opacity: 0, y: -50 })
+        })
+    </script>
+</body>
+
+</html>
